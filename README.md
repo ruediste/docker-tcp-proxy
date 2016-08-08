@@ -1,3 +1,5 @@
+[![](https://images.microbadger.com/badges/image/demandbase/docker-tcp-proxy.svg)](http://microbadger.com/images/demandbase/docker-tcp-proxy "Get your own image badge on microbadger.com")
+
 # docker-tcp-proxy
 Simple TCP Proxy in a Docker Container using [HAproxy](http://www.haproxy.org/)
 

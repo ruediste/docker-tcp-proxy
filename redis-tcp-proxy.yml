@@ -1,12 +1,6 @@
-redis-tcp-proxy-lb:
+redis-tcp-proxy:
   ports:
   - 23201:6379
-  tty: true
-  image: rancher/load-balancer-service
-  links:
-  - redis-tcp-proxy:redis-tcp-proxy
-  stdin_open: true
-redis-tcp-proxy:
   labels:
     io.rancher.container.pull_image: always
     io.rancher.container.start_once: 'true'

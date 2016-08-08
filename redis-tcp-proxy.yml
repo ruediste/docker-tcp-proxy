@@ -1,0 +1,18 @@
+redis-tcp-proxy-lb:
+  ports:
+  - 23201:6379
+  tty: true
+  image: rancher/load-balancer-service
+  links:
+  - redis-tcp-proxy:redis-tcp-proxy
+  stdin_open: true
+redis-tcp-proxy:
+  labels:
+    io.rancher.container.pull_image: always
+    io.rancher.container.start_once: 'true'
+  tty: true
+  image: demandbase/docker-tcp-proxy
+    - BACKEND_HOST=
+    - BACKEND_PORT=
+  env_file: .env.export
+  stdin_open: true

@@ -12,6 +12,7 @@ redis-tcp-proxy:
     io.rancher.container.start_once: 'true'
   tty: true
   image: demandbase/docker-tcp-proxy
+  environment:
     - BACKEND_HOST=
     - BACKEND_PORT=
   env_file: .env.export

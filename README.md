@@ -34,7 +34,7 @@ docker run -it -p 6379:6379 --rm -e "BACKEND_HOST=my-elasticache.domain.com" -e 
 This repository contains a compose file to deploy a Redis proxy to a [Rancher](https://www.rancher.com) cluster. By default it listens on port 23201.
 
 #### Environment File
-Create the environment .env.export file with the `BACKEND_HOST` and `BACKEND_PORT` values,
+Create the environment `.env.export` file with the `BACKEND_HOST` and `BACKEND_PORT` values,
 
 ```
 BACKEND_HOST=redis.your-domain.com

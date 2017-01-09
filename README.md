@@ -17,7 +17,7 @@ When running the container two Environment Variables are required
 - `BACKEND_HOST`
   - IP or hostname to proxy connections to
 - `BACKEND_PORT`
-  - The port number to proxy connections to
+  - The port number to proxy connections to. This is also the port the container listens on.
 
 ### Building the Container
 
